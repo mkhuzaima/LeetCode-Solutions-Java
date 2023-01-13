@@ -1,7 +1,7 @@
 
 # github actions for formatting all added java files
 
-name: Test
+name: Test version2
 
 on: push
 
@@ -9,18 +9,25 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.1.0
+      - uses: actions/checkout@v3
+
+      - name: setup python
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' 
+      
       - uses: jitterbit/get-changed-files@v1
         id: abc
         with:
           format: 'csv'
           token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Printing
+
+      - name: printing
         run: |
 
           mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
-          for added_modified_file in "${added_modified_files[@]}"; do
-            echo "Do something with this ${added_modified_file}."
+          for added_modified_file in "${{added_modified_files[@]}}"; do
+            echo "Do something with this ${{added_modified_file}}."
           done
 
           echo "All:"
@@ -35,3 +42,7 @@ jobs:
           echo "${{ steps.abc.outputs.modified }}"
           echo "Added+Modified:"
           echo "${{ steps.abc.outputs.added_modified }}"
+
+      - name: calling formatter
+      # call updateHeader.py which is present is in 
+        run: python github/workflows/updateHeader.py invalid_filename.txt
