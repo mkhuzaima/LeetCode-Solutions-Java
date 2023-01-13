@@ -45,4 +45,6 @@ jobs:
 
       - name: calling formatter
       # call updateHeader.py which is present is in 
-        run: python github/workflows/updateHeader.py invalid_filename.txt
+        run: |
+          echo 'khuzaima'
+        # python github/workflows/updateHeader.py invalid_filename.txt
