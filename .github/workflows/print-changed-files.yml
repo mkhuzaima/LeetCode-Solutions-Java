@@ -1,0 +1,25 @@
+name: Example Action
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Get changed files
+      run: |
+        git show --diff-filter=AM --pretty="format:" --name-only *.java 
+        git diff-tree --no-commit-id --name-only -r HEAD HEAD^ -- 
+        git diff-tree --no-commit-id --name-only -r HEAD HEAD^ -- > changed_files.txt
+#       git diff-tree --no-commit-id --name-only -r HEAD HEAD~1 > changed_files.txt
+      # git show --diff-filter=AM --pretty="format:" --name-only *.java > changed_files.txt\
+    - name: Do something with changed files
+      run: |
+        while read filename; do
+          echo "Processing $filename"
+          # Do something with $filename
+        done < changed_files.txt
+
