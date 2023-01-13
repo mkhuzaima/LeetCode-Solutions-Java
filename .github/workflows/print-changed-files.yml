@@ -12,8 +12,9 @@ jobs:
     - name: Get changed files
       run: |
         git show --diff-filter=AM --pretty="format:" --name-only *.java 
-        git diff-tree --no-commit-id --name-only -r HEAD HEAD^ -- 
-        git diff-tree --no-commit-id --name-only -r HEAD HEAD^ -- > changed_files.txt
+        git diff-tree --no-commit-id --name-only -r ${GITHUB_SHA} ${GITHUB_SHA}^
+        git diff-tree --no-commit-id --name-only -r ${GITHUB_SHA} ${GITHUB_SHA}^ > changed_files.txt
+#        git diff-tree --no-commit-id --name-only -r HEAD HEAD^ -- > changed_files.txt
 #       git diff-tree --no-commit-id --name-only -r HEAD HEAD~1 > changed_files.txt
       # git show --diff-filter=AM --pretty="format:" --name-only *.java > changed_files.txt\
     - name: Do something with changed files
