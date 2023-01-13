@@ -11,37 +11,37 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: setup python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10' 
+#       - name: setup python
+#         uses: actions/setup-python@v4
+#         with:
+#           python-version: '3.10' 
       
-      - uses: jitterbit/get-changed-files@v1
-        id: abc
-        with:
-          format: 'csv'
-          token: ${{ secrets.GITHUB_TOKEN }}
+#       - uses: jitterbit/get-changed-files@v1
+#         id: abc
+#         with:
+#           format: 'csv'
+#           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: printing
-        run: |
+#       - name: printing
+#         run: |
 
-          mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
-          for added_modified_file in "${added_modified_files[@]}"; do
-            echo "Do something with this ${added_modified_file}."
-          done
+#           mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
+#           for added_modified_file in "${added_modified_files[@]}"; do
+#             echo "Do something with this ${added_modified_file}."
+#           done
 
-          echo "All:"
-          echo "${{ steps.abc.outputs.all }}"
-          echo "Added:"
-          echo "${{ steps.abc.outputs.added }}"
-          echo "Removed:"
-          echo "${{ steps.abc.outputs.removed }}"
-          echo "Renamed:"
-          echo "${{ steps.abc.outputs.renamed }}"
-          echo "Modified:"
-          echo "${{ steps.abc.outputs.modified }}"
-          echo "Added+Modified:"
-          echo "${{ steps.abc.outputs.added_modified }}"
+#           echo "All:"
+#           echo "${{ steps.abc.outputs.all }}"
+#           echo "Added:"
+#           echo "${{ steps.abc.outputs.added }}"
+#           echo "Removed:"
+#           echo "${{ steps.abc.outputs.removed }}"
+#           echo "Renamed:"
+#           echo "${{ steps.abc.outputs.renamed }}"
+#           echo "Modified:"
+#           echo "${{ steps.abc.outputs.modified }}"
+#           echo "Added+Modified:"
+#           echo "${{ steps.abc.outputs.added_modified }}"
 
       - name: calling formatter
       # call updateHeader.py which is present is in 
