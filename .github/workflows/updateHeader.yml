@@ -49,14 +49,15 @@ jobs:
         echo $CURRENT
         echo $PREVIOUS
 
-          
     - name: all changed files
       run: |
         git diff --diff-filter=AM --name-only ${{github.event.before}}..${GITHUB_SHA}
           
     - name: Get changed java files
       run: |
-        for file in $(git diff --diff-filter=AM --name-only ${{ github.event.before }}..${GITHUB_SHA} *.java )
+        $(git diff --diff-filter=AM --name-only ${{ github.event.before }}..${GITHUB_SHA} *.java
+        echo 'before loop'
+        for file in $(git diff --diff-filter=AM --name-only ${{ github.event.before }}..${GITHUB_SHA} *.java ) ; do
           echo "$file was changed"
           # python ./.github/workflows/updateHeader.py $file
           python updateHeader.py $file
