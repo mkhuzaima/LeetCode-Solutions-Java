@@ -35,7 +35,7 @@ jobs:
         done
     - name: printing sha
       run: |
-        echo ${{GITHUB_SHA}}
+        echo ${GITHUB_SHA}
         echo ${{ github.event.before }}
 
 
