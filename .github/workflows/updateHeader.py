@@ -1,3 +1,4 @@
+import sys
 import os
 import re
 
@@ -39,25 +40,19 @@ def updateHeader(file):
 
 
 if __name__ == '__main__':
-    # filename = sys.argv[1]
-    filename = '2246_Longest-Path-With-Different-Adjacent-Characters.java'
-
-    print('hello world')
-    exit(1)
+    filename = sys.argv[1]
 
     # check if the file exists
     if not os.path.exists(filename):
         print('File does not exist')
-        exit(1)
 
     # check if the file is a java file
     if not filename.endswith('.java'):
         print('File is not a java file')
-        exit(1)
 
     try:
         # update the header
         updateHeader(filename)
+        print(f'Updated {filename}')
     except:
         print(f'Something went wrong while updating {filename}')
-        exit(1)
