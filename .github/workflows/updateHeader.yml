@@ -42,7 +42,7 @@ jobs:
     
     - name: Run for changed java files
       run: |
-        cat .github/workflows/updateHeader.py
+        # cat .github/workflows/updateHeader.py
         for file in ${{ steps.changed-files-specific.outputs.all_changed_files }}; do
           echo "$file was changed"
           python .github/workflows/updateHeader.py $file
