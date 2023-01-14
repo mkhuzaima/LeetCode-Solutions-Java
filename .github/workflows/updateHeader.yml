@@ -10,57 +10,77 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Get changed files
-      id: changed-files-specific
-      uses: tj-actions/changed-files@v35
+#     - name: Get changed files
+#       id: changed-files-specific
+#       uses: tj-actions/changed-files@v35
 
-      with:
-        since_last_remote_commit: true
+#       with:
+#         since_last_remote_commit: true
         
-        files: |
-          *.java
-    #       !*.md
-    #       test_directory
-    #       **/*.sql
+#         files: |
+#           *.java
+#     #       !*.md
+#     #       test_directory
+#     #       **/*.sql
+
+
     
-    
-    
-    - name: Run for all changed files
+    - name: Setting up the git user
       run: |
-        echo ${GITHUB_WORKSPACE}
-        for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+          git config --global user.name 'Muhammad Khuzaima Umair'
+          git config --global user.email 'mkhuzaima@users.noreply.github.com'
+          
+    - name: all changed files
+      run: |
+        git diff --diff-filter=AM --name-only ${{ github.event.before }}..${GITHUB_SHA}}
+          
+    - name: Get changed java files
+      run: |
+        for file in ${{git diff --diff-filter=AM --name-only ${{ github.event.before }}..${GITHUB_SHA} *.java }}
           echo "$file was changed"
           # python ./.github/workflows/updateHeader.py $file
           python updateHeader.py $file
+
+          # create commit 
+          git commit -am "Formatted $file"
         done
+        
+        
+        git push || echo "There is nothing to push"
+
+    
+    
+#     - name: Run for all changed files
+#       run: |
+#         echo ${GITHUB_WORKSPACE}
+#         for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+#           echo "$file was changed"
+#           # python ./.github/workflows/updateHeader.py $file
+#           python updateHeader.py $file
+#         done
     - name: printing sha
       run: |
         echo ${GITHUB_SHA}
         echo ${{ github.event.before }}
 
 
-    - name: Setting up the git user
-      run: |
-          git config --global user.name 'Muhammad Khuzaima Umair'
-          git config --global user.email 'mkhuzaima@users.noreply.github.com'
-          
     
-    - name: Run for changed java files
-      run: |
-        # cat .github/workflows/updateHeader.py
-        for file in ${{ steps.changed-files-specific.outputs.all_changed_files }}; do
-          echo "$file was changed"
-          python .github/workflows/updateHeader.py $file
-          # python ./.github/workflows/updateHeader.py $file
+#     - name: Run for changed java files
+#       run: |
+#         # cat .github/workflows/updateHeader.py
+#         for file in ${{ steps.changed-files-specific.outputs.all_changed_files }}; do
+#           echo "$file was changed"
+#           python .github/workflows/updateHeader.py $file
+#           # python ./.github/workflows/updateHeader.py $file
 
-          # create commit 
-          git commit -am "Formatted $file"
+#           # create commit 
+#           git commit -am "Formatted $file"
 
-        done
-        git push || echo "There is nothing to push"
+#         done
+#         git push || echo "There is nothing to push"
 
-        git config --global user.name 'Your Name'
-        git config --global user.email 'your-username@users.noreply.github.com'
+#         git config --global user.name 'Your Name'
+#         git config --global user.email 'your-username@users.noreply.github.com'
           
     # - name: Run step if only the files listed above change
     #   if: steps.changed-files-specific.outputs.only_changed == 'true'
