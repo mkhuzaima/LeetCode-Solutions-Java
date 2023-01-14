@@ -37,7 +37,7 @@ jobs:
       run: |
         for file in ${{ steps.changed-files-specific.outputs.all_changed_files }}; do
           echo "$file was changed"
-          python github/workflows/updateHeader.py $file
+          python ./github/workflows/updateHeader.py $file
         done
 
     # - name: Run step if any of the listed files above change
