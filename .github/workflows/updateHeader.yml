@@ -10,9 +10,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-#     - name: Get changed files
-#       id: changed-files-specific
-#       uses: tj-actions/changed-files@v35
+    - name: Get changed files
+      id: changed-files-specific
+      uses: tj-actions/changed-files@v35
 
 #       with:
 #         since_last_remote_commit: true
@@ -25,6 +25,16 @@ jobs:
 
 
     
+    - name: Run for all changed files
+      run: |
+        echo ${GITHUB_WORKSPACE}
+        for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+          echo "$file was changed"
+          # python ./.github/workflows/updateHeader.py $file
+          python updateHeader.py $file
+        done
+        
+        
     - name: Setting up the git user
       run: |
           git config --global user.name 'Muhammad Khuzaima Umair'
@@ -60,14 +70,7 @@ jobs:
 
     
     
-#     - name: Run for all changed files
-#       run: |
-#         echo ${GITHUB_WORKSPACE}
-#         for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-#           echo "$file was changed"
-#           # python ./.github/workflows/updateHeader.py $file
-#           python updateHeader.py $file
-#         done
+
 
 
     
