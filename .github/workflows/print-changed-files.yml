@@ -14,6 +14,9 @@ jobs:
         git show --diff-filter=AM --pretty="format:" --name-only *.java 
     - name: changed files using sha
       run: |
+       git diff-tree --no-commit-id --name-only -r ${GITHUB_SHA} ${GITHUB_SHA}@{1} -- "*.java"
+       echo 'run successfully'
+
        git diff-tree --no-commit-id --name-only -r ${GITHUB_SHA} ${GITHUB_SHA}~1 --
         git diff-tree --no-commit-id --name-only -r ${GITHUB_SHA} ${GITHUB_SHA}~1 -- > changed_files.txt
 #        git diff-tree --no-commit-id --name-only -r HEAD HEAD^ -- > changed_files.txt
@@ -25,4 +28,50 @@ jobs:
           echo "Processing $filename"
           # Do something with $filename
         done < changed_files.txt
+        
+        
+        
+    - name: Get changed files
+      id: changed-files-specific
+      uses: tj-actions/changed-files@v35
+      with:
+        files: |
+          *.java
+    #       my-file.txt
+    #       *.sh
+    #       *.png
+    #       !*.md
+    #       test_directory
+    #       **/*.sql
+    
+    - name: for all added files
+      run: |
+        for file in ${{ steps.changed-files-specific.outputs.added_files }}; do
+          echo "$file was deleted"
+        done
+
+
+    - name: Run step if any of the listed files above change
+      if: steps.changed-files-specific.outputs.any_changed == 'true'
+      run: |
+        echo "One or more files listed above has changed."
+
+    - name: Run step if only the files listed above change
+      if: steps.changed-files-specific.outputs.only_changed == 'true'
+      run: |
+        echo "Only files listed above have changed."
+
+    - name: Run step if any of the listed files above is deleted
+      if: steps.changed-files-specific.outputs.any_deleted == 'true'
+      run: |
+        for file in ${{ steps.changed-files-specific.outputs.deleted_files }}; do
+          echo "$file was deleted"
+        done
+
+    - name: Run step if all listed files above have been deleted
+      if: steps.changed-files-specific.outputs.only_deleted == 'true'
+      run: |
+        for file in ${{ steps.changed-files-specific.outputs.deleted_files }}; do
+          echo "$file was deleted"
+        done
 
