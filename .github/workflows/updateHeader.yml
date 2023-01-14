@@ -33,6 +33,11 @@ jobs:
           # python ./.github/workflows/updateHeader.py $file
           python updateHeader.py $file
         done
+    - name: printing sha
+      run: |
+        echo ${{GITHUB_SHA}}
+        echo ${{ github.event.before }}
+
 
     - name: Setting up the git user
       run: |
@@ -52,7 +57,7 @@ jobs:
           git commit -am "Formatted $file"
 
         done
-        git push
+        git push || echo "There is nothing to push"
 
         git config --global user.name 'Your Name'
         git config --global user.email 'your-username@users.noreply.github.com'
