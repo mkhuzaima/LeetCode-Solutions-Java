@@ -42,6 +42,9 @@ if __name__ == '__main__':
     # filename = sys.argv[1]
     filename = '2246_Longest-Path-With-Different-Adjacent-Characters.java'
 
+    print('hello world')
+    exit(1)
+
     # check if the file exists
     if not os.path.exists(filename):
         print('File does not exist')
