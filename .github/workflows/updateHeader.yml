@@ -55,7 +55,7 @@ jobs:
           
     - name: Get changed java files
       run: |
-        $(git diff --diff-filter=AM --name-only ${{ github.event.before }}..${GITHUB_SHA} *.java
+        git diff --diff-filter=AM --name-only ${{ github.event.before }}..${GITHUB_SHA} *.java
         echo 'before loop'
         for file in $(git diff --diff-filter=AM --name-only ${{ github.event.before }}..${GITHUB_SHA} *.java ) ; do
           echo "$file was changed"
