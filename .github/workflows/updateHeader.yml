@@ -32,7 +32,7 @@ jobs:
           
     - name: all changed files
       run: |
-        git diff --diff-filter=AM --name-only ${{ github.event.before }}..${GITHUB_SHA}}
+        git diff --diff-filter=AM --name-only ${{ github.event.before }}..${GITHUB_SHA}
           
     - name: Get changed java files
       run: |
