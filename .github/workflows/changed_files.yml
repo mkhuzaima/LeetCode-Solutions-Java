@@ -1,0 +1,49 @@
+name: Get changed files
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Get changed files
+      id: changed-files-specific
+      uses: tj-actions/changed-files@v35
+      with:
+        files: |
+          *.java
+          *.yml
+    
+    - name: Run step if any of the listed files above is added
+      run: |
+        for file in ${{ steps.changed-files-specific.outputs.added_files }}; do
+          echo "$file was deleted"
+        done
+
+    - name: Run step if any of the listed files above change
+      if: steps.changed-files-specific.outputs.any_changed == 'true'
+      run: |
+        echo "One or more files listed above has changed."
+
+    - name: Run step if only the files listed above change
+      if: steps.changed-files-specific.outputs.only_changed == 'true'
+      run: |
+        echo "Only files listed above have changed."
+
+    - name: Run step if any of the listed files above is deleted
+      if: steps.changed-files-specific.outputs.any_deleted == 'true'
+      run: |
+        for file in ${{ steps.changed-files-specific.outputs.deleted_files }}; do
+          echo "$file was deleted"
+        done
+
+    - name: Run step if all listed files above have been deleted
+      if: steps.changed-files-specific.outputs.only_deleted == 'true'
+      run: |
+        for file in ${{ steps.changed-files-specific.outputs.deleted_files }}; do
+          echo "$file was deleted"
+        done
