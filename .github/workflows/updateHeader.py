@@ -55,5 +55,7 @@ if __name__ == '__main__':
         # update the header
         updateHeader(filename)
         print(f'Updated {filename}')
-    except:
+    # print exception
+    except Exception as e:
+        print('Exception: ', e)
         print(f'Something went wrong while updating {filename}')
