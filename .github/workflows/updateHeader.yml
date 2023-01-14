@@ -31,7 +31,9 @@ jobs:
       run: |
         for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
           echo "$file was changed"
-          python ./.github/workflows/updateHeader.py $file
+          echo ${GITHUB_WORKSPACE}
+          # python ./.github/workflows/updateHeader.py $file
+          python updateHeader.py $file
         done
     
     - name: Run for changed java files
