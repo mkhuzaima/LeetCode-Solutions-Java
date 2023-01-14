@@ -1,4 +1,4 @@
-name: Example Action
+name: Get changed files
 on:
   push:
     branches:
@@ -9,47 +9,20 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Get changed files
-      run: |
-        git show --diff-filter=AM --pretty="format:" --name-only *.java 
-    - name: changed files using sha
-      run: |
-       git diff --name-only ${GITHUB_SHA} ${GITHUB_SHA}@{1} -- "*.java"
-       echo 'run successfully'
 
-       git diff-tree --no-commit-id --name-only -r ${GITHUB_SHA} ${GITHUB_SHA}~1 --
-        git diff-tree --no-commit-id --name-only -r ${GITHUB_SHA} ${GITHUB_SHA}~1 -- > changed_files.txt
-#        git diff-tree --no-commit-id --name-only -r HEAD HEAD^ -- > changed_files.txt
-#       git diff-tree --no-commit-id --name-only -r HEAD HEAD~1 > changed_files.txt
-      # git show --diff-filter=AM --pretty="format:" --name-only *.java > changed_files.txt\
-    - name: Do something with changed files
-      run: |
-        while read filename; do
-          echo "Processing $filename"
-          # Do something with $filename
-        done < changed_files.txt
-        
-        
-        
     - name: Get changed files
       id: changed-files-specific
       uses: tj-actions/changed-files@v35
       with:
         files: |
           *.java
-    #       my-file.txt
-    #       *.sh
-    #       *.png
-    #       !*.md
-    #       test_directory
-    #       **/*.sql
+          *.yml
     
-    - name: for all added files
+    - name: Run step if any of the listed files above is added
       run: |
         for file in ${{ steps.changed-files-specific.outputs.added_files }}; do
           echo "$file was deleted"
         done
-
 
     - name: Run step if any of the listed files above change
       if: steps.changed-files-specific.outputs.any_changed == 'true'
@@ -74,4 +47,3 @@ jobs:
         for file in ${{ steps.changed-files-specific.outputs.deleted_files }}; do
           echo "$file was deleted"
         done
-
