@@ -20,15 +20,16 @@ def updateHeader(file):
     # read
     with open(file, 'r') as f:
         lines = f.readlines()
+
     
     # get the id
-    id = re.search(r'// id: (\d+)', lines[0]).group(1)
+    id = re.search(r'// id: (\d+)', lines[0], re.IGNORECASE).group(1)
     # get the name
-    name = re.search(r'// Name: (.+)', lines[1]).group(1)
+    name = re.search(r'// Name: (.+)', lines[1], re.IGNORECASE).group(1)
     # get the link
-    link = re.search(r'// link: (.+)', lines[2]).group(1)
+    link = re.search(r'// link: (.+)', lines[2], re.IGNORECASE).group(1)
     # get the difficulty
-    difficulty = re.search(r'// Difficulty: (.+)', lines[3]).group(1)
+    difficulty = re.search(r'// Difficulty: (.+)', lines[3], re.IGNORECASE).group(1)
 
     # update the header
     header = headerFormat.format(id=id, name=name, link=link, difficulty=difficulty)
