@@ -1,7 +1,13 @@
-// id: 1061
-// name: Lexicographically Smallest Equivalent String
-// link: https://leetcode.com/problems/lexicographically-smallest-equivalent-string
-// Difficulty: Medium
+/*
+ * 1061. Lexicographically Smallest Equivalent String
+ * Problem Link: https://leetcode.com/problems/lexicographically-smallest-equivalent-string
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     int[] parent = new int[26];
