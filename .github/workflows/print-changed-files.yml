@@ -14,7 +14,7 @@ jobs:
         git show --diff-filter=AM --pretty="format:" --name-only *.java 
     - name: changed files using sha
       run: |
-       git diff-tree --no-commit-id --name-only -r ${GITHUB_SHA} ${GITHUB_SHA}@{1} -- "*.java"
+       git diff --name-only ${GITHUB_SHA} ${GITHUB_SHA}@{1} -- "*.java"
        echo 'run successfully'
 
        git diff-tree --no-commit-id --name-only -r ${GITHUB_SHA} ${GITHUB_SHA}~1 --
