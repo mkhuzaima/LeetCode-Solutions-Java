@@ -1,0 +1,66 @@
+name: Update Header
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Get changed files
+      id: changed-files-specific
+      uses: tj-actions/changed-files@v35
+
+      with:
+        since_last_remote_commit: true
+        files: |
+          *.java
+    #       my-file.txt
+    #       *.sh
+    #       *.png
+    #       !*.md
+    #       test_directory
+    #       **/*.sql
+    
+    
+    
+    - name: Run for all changed files
+      run: |
+        for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+          echo "$file was changed"
+          python github/workflows/updateHeader.py $file
+        done
+    
+    - name: Run for changed java files
+      run: |
+        for file in ${{ steps.changed-files-specific.outputs.all_changed_files }}; do
+          echo "$file was changed"
+          python ./github/workflows/updateHeader.py $file
+        done
+
+    - name: Run step if any of the listed files above change
+      if: steps.changed-files-specific.outputs.any_changed == 'true'
+      run: |
+        echo "One or more files listed above has changed."
+
+    - name: Run step if only the files listed above change
+      if: steps.changed-files-specific.outputs.only_changed == 'true'
+      run: |
+        echo "Only files listed above have changed."
+
+    - name: Run step if any of the listed files above is deleted
+      if: steps.changed-files-specific.outputs.any_deleted == 'true'
+      run: |
+        for file in ${{ steps.changed-files-specific.outputs.deleted_files }}; do
+          echo "$file was deleted"
+        done
+
+    - name: Run step if all listed files above have been deleted
+      if: steps.changed-files-specific.outputs.only_deleted == 'true'
+      run: |
+        for file in ${{ steps.changed-files-specific.outputs.deleted_files }}; do
+          echo "$file was deleted"
+        done
