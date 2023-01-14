@@ -38,7 +38,7 @@ jobs:
           python .github/workflows/updateHeader.py $file
 
           # create commit 
-          git commit -am "Formatted $file"
+          git commit -am "Formatted $file" || echo "nothing to commit"
 
         done
         git push || echo "There is nothing to push"
