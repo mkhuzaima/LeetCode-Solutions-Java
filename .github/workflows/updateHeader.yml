@@ -15,14 +15,10 @@ jobs:
       uses: tj-actions/changed-files@v35
 
       with:
-#         since_last_remote_commit: true
-        fetch-depth: 2  # OR "0" -> To retrieve the preceding commit.
+        since_last_remote_commit: true
         
         files: |
           *.java
-    #       my-file.txt
-    #       *.sh
-    #       *.png
     #       !*.md
     #       test_directory
     #       **/*.sql
@@ -37,6 +33,12 @@ jobs:
           # python ./.github/workflows/updateHeader.py $file
           python updateHeader.py $file
         done
+
+    - name: Setting up the git user
+      run: |
+          git config --global user.name 'Muhammad Khuzaima Umair'
+          git config --global user.email 'mkhuzaima@users.noreply.github.com'
+          
     
     - name: Run for changed java files
       run: |
@@ -45,28 +47,31 @@ jobs:
           echo "$file was changed"
           python .github/workflows/updateHeader.py $file
           # python ./.github/workflows/updateHeader.py $file
+
+          # create commit 
+          git commit -am "Formatted $file"
+
         done
+        git push
 
-    - name: Run step if any of the listed files above change
-      if: steps.changed-files-specific.outputs.any_changed == 'true'
-      run: |
-        echo "One or more files listed above has changed."
+        git config --global user.name 'Your Name'
+        git config --global user.email 'your-username@users.noreply.github.com'
+          
+    # - name: Run step if only the files listed above change
+    #   if: steps.changed-files-specific.outputs.only_changed == 'true'
+    #   run: |
+    #     echo "Only files listed above have changed."
 
-    - name: Run step if only the files listed above change
-      if: steps.changed-files-specific.outputs.only_changed == 'true'
-      run: |
-        echo "Only files listed above have changed."
+    # - name: Run step if any of the listed files above is deleted
+    #   if: steps.changed-files-specific.outputs.any_deleted == 'true'
+    #   run: |
+    #     for file in ${{ steps.changed-files-specific.outputs.deleted_files }}; do
+    #       echo "$file was deleted"
+    #     done
 
-    - name: Run step if any of the listed files above is deleted
-      if: steps.changed-files-specific.outputs.any_deleted == 'true'
-      run: |
-        for file in ${{ steps.changed-files-specific.outputs.deleted_files }}; do
-          echo "$file was deleted"
-        done
-
-    - name: Run step if all listed files above have been deleted
-      if: steps.changed-files-specific.outputs.only_deleted == 'true'
-      run: |
-        for file in ${{ steps.changed-files-specific.outputs.deleted_files }}; do
-          echo "$file was deleted"
-        done
+    # - name: Run step if all listed files above have been deleted
+    #   if: steps.changed-files-specific.outputs.only_deleted == 'true'
+    #   run: |
+    #     for file in ${{ steps.changed-files-specific.outputs.deleted_files }}; do
+    #       echo "$file was deleted"
+    #     done
