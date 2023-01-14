@@ -30,9 +30,19 @@ jobs:
           git config --global user.name 'Muhammad Khuzaima Umair'
           git config --global user.email 'mkhuzaima@users.noreply.github.com'
           
+          
+    - name: printing sha
+      run: |
+        CURRENT = ${GITHUB_SHA}
+        PREVIOUS =  ${{ github.event.before }}
+        
+        echo $CURRENT
+        echo $PREVIOUS
+
+          
     - name: all changed files
       run: |
-        git diff --diff-filter=AM --name-only ${{ github.event.before }}..${GITHUB_SHA}
+        git diff --diff-filter=AM --name-only ${{github.event.before}}..${GITHUB_SHA}
           
     - name: Get changed java files
       run: |
@@ -58,10 +68,6 @@ jobs:
 #           # python ./.github/workflows/updateHeader.py $file
 #           python updateHeader.py $file
 #         done
-    - name: printing sha
-      run: |
-        echo ${GITHUB_SHA}
-        echo ${{ github.event.before }}
 
 
     
