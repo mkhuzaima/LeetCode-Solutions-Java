@@ -29,9 +29,9 @@ jobs:
     
     - name: Run for all changed files
       run: |
+        echo ${GITHUB_WORKSPACE}
         for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
           echo "$file was changed"
-          echo ${GITHUB_WORKSPACE}
           # python ./.github/workflows/updateHeader.py $file
           python updateHeader.py $file
         done
