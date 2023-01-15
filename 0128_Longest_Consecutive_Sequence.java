@@ -1,7 +1,13 @@
-// id: 128
-// name: Longest Consecutive Sequence
-// link: https://leetcode.com/problems/longest-consecutive-sequence/
-// Difficulty: Medium
+/*
+ * 128. Longest Consecutive Sequence
+ * Problem Link: https://leetcode.com/problems/longest-consecutive-sequence/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 // Easier approach is by sorting the array
 // This approach uses disjoint set union to find the longest consecutive sequence in the array.
