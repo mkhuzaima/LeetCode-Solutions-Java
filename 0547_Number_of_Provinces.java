@@ -1,7 +1,13 @@
-// id: 547
-// Name: Number of Provinces
-// link: https://leetcode.com/problems/number-of-provinces/
-// Difficulty: Medium
+/*
+ * 547. Number of Provinces
+ * Problem Link: https://leetcode.com/problems/number-of-provinces/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 // Union Find Approach
 class Solution {
