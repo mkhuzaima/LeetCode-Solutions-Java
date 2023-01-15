@@ -1,7 +1,13 @@
-// id: 129
-// Name: Sum Root to Leaf Numbers
-// link: https://leetcode.com/problems/sum-root-to-leaf-numbers
-// Difficulty: Medium
+/*
+ * 129. Sum Root to Leaf Numbers
+ * Problem Link: https://leetcode.com/problems/sum-root-to-leaf-numbers
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 /**
  * Definition for a binary tree node.
