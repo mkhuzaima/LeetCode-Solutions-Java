@@ -16,44 +16,34 @@ class Solution {
         int index = 0;
         int n = intervals.length;
 
-        int[][] result = new int[n+1][2];
+        List<int[]> result = new ArrayList<>(n);
 
+        // add all smaller intervals
         while (index < n && intervals[index][1] < newInterval[0]) {
-            result[index] = intervals[index];
+            result.add(intervals[index]);
             index++;
         }
 
-        if (index < n) 
+        if (index < n)
             newInterval[0] = Math.min(newInterval[0], intervals[index][0]);
 
-        result[index][0] = newInterval[0];
-
-
-        int j = index ;
-        while(j < n && newInterval[1] >= intervals[j][0]){
-            j++;
-        } 
-
-
-        if (j > 0){
-            newInterval[1] = Math.max(newInterval[1], intervals[j-1][1]);
+        while (index < n && newInterval[1] >= intervals[index][0]) {
+            index++;
         }
 
-        result[index++][1] = newInterval[1];
-
-        while(j < n) {
-            result[index++] = intervals[j++];
+        if (index > 0) {
+            newInterval[1] = Math.max(newInterval[1], intervals[index - 1][1]);
         }
 
-        if ( index == n +1) {   // resize not needed
-            return result;
+        result.add(newInterval);
+
+        // add all larger intervals
+        while (index < n) {
+            result.add(intervals[index]);
+            index++;
         }
 
-        // resize the array
-        int [][]newResult = new int[index][2];
-        for (int i = 0; i < index; i++) {
-            newResult[i] = result[i];
-        }
-        return newResult;
+        // return the result as array
+        return result.toArray(new int[result.size()][]);
     }
 }
