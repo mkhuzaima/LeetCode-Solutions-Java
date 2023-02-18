@@ -1,7 +1,13 @@
-// id: 226
-// Name: Invert Binary Tree
-// link: https://leetcode.com/problems/invert-binary-tree/
-// Difficulty: Easy
+/*
+ * 226. Invert Binary Tree
+ * Problem Link: https://leetcode.com/problems/invert-binary-tree/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
