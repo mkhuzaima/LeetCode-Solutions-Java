@@ -1,7 +1,13 @@
-// id: 103
-// Name: Binary Tree Zigzag Level Order Traversal
-// link: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
-// Difficulty: Medium
+/*
+ * 103. Binary Tree Zigzag Level Order Traversal
+ * Problem Link: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
