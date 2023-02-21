@@ -1,7 +1,13 @@
-// id: 540
-// Name: Single Element in a Sorted Array
-// link: https://leetcode.com/problems/single-element-in-a-sorted-array/
-// Difficulty: Medium
+/*
+ * 540. Single Element in a Sorted Array
+ * Problem Link: https://leetcode.com/problems/single-element-in-a-sorted-array/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int singleNonDuplicate(int[] nums) {
