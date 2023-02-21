@@ -1,7 +1,13 @@
-// id: 1863
-// Name: Sum of All Subset XOR Totals
-// link: https://leetcode.com/problems/sum-of-all-subset-xor-totals/
-// Difficulty: Easy
+/*
+ * 1863. Sum of All Subset XOR Totals
+ * Problem Link: https://leetcode.com/problems/sum-of-all-subset-xor-totals/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int subsetXORSum(int[] nums) {
