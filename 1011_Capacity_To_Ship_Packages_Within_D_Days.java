@@ -1,7 +1,13 @@
-// id: 1011
-// Name: Capacity To Ship Packages Within D Days
-// link: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
-// Difficulty: Medium
+/*
+ * 1011. Capacity To Ship Packages Within D Days
+ * Problem Link: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int shipWithinDays(int[] weights, int days) {
