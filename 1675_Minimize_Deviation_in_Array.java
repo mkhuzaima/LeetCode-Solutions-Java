@@ -1,7 +1,13 @@
-// id: 1675
-// Name: Minimize Deviation in Array
-// link: https://leetcode.com/problems/minimize-deviation-in-array/
-// Difficulty: Hard
+/*
+ * 1675. Minimize Deviation in Array
+ * Problem Link: https://leetcode.com/problems/minimize-deviation-in-array/
+ * Difficulty:   Hard
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int minimumDeviation(int[] nums) {
