@@ -1,7 +1,13 @@
-// id: 382
-// Name: Linked List Random Node
-// link: https://leetcode.com/problems/linked-list-random-node/
-// Difficulty: Medium
+/*
+ * 382. Linked List Random Node
+ * Problem Link: https://leetcode.com/problems/linked-list-random-node/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 
 class Solution {
