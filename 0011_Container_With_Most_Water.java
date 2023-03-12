@@ -1,7 +1,13 @@
-// id: 11
-// Name: Container With Most Water
-// link: https://leetcode.com/problems/container-with-most-water/
-// Difficulty: Medium
+/*
+ * 11. Container With Most Water
+ * Problem Link: https://leetcode.com/problems/container-with-most-water/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int maxArea(int[] height) {
