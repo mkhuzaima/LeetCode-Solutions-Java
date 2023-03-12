@@ -1,7 +1,13 @@
-// id: 21
-// Name: Merge Two Sorted Lists
-// link: https://leetcode.com/problems/merge-two-sorted-lists/
-// Difficulty: Easy
+/*
+ * 21. Merge Two Sorted Lists
+ * Problem Link: https://leetcode.com/problems/merge-two-sorted-lists/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
