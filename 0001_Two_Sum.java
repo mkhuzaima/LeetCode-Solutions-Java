@@ -1,7 +1,13 @@
-// id: 1
-// Name: Two Sum
-// link: https://leetcode.com/problems/two-sum/
-// Difficulty: Easy
+/*
+ * 1. Two Sum
+ * Problem Link: https://leetcode.com/problems/two-sum/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
