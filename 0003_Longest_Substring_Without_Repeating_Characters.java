@@ -1,7 +1,13 @@
-// id: 3
-// Name: Longest Substring Without Repeating Characters
-// link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
-// Difficulty: Medium
+/*
+ * 3. Longest Substring Without Repeating Characters
+ * Problem Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int lengthOfLongestSubstring(String s) {
