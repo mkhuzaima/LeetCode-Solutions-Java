@@ -1,7 +1,13 @@
-// id: 23
-// Name: Merge k Sorted Lists
-// link: https://leetcode.com/problems/merge-k-sorted-lists/
-// Difficulty: Hard
+/*
+ * 23. Merge k Sorted Lists
+ * Problem Link: https://leetcode.com/problems/merge-k-sorted-lists/
+ * Difficulty:   Hard
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
