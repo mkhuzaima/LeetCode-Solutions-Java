@@ -15,6 +15,7 @@ class Solution {
                 map.put(nums[i], i);
             }
         }
+        // not possible, since solution exists
         return null;
     }
 }

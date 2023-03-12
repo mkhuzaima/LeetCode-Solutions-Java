@@ -51,7 +51,8 @@ class Solution {
   
   
     //////////////////////////////////// SECOND APPROACH
-    public ListNode mergeKLists__approach2(ListNode[] lists) {
+    /*
+    public ListNode mergeKLists(ListNode[] lists) {
 
         // create a list object for merged lists
         ListNode head = null;
@@ -92,4 +93,5 @@ class Solution {
         
         return head;
     }
+    */
 }
