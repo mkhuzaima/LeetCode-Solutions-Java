@@ -1,7 +1,13 @@
-// id: 20
-// Name: Valid Parentheses
-// link: https://leetcode.com/problems/valid-parentheses/
-// Difficulty: Easy
+/*
+ * 20. Valid Parentheses
+ * Problem Link: https://leetcode.com/problems/valid-parentheses/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public boolean isValid(String s) {
