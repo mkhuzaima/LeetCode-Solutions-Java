@@ -1,7 +1,13 @@
-// id: 79
-// Name: Word Search
-// link: https://leetcode.com/problems/word-search/
-// Difficulty: Medium
+/*
+ * 79. Word Search
+ * Problem Link: https://leetcode.com/problems/word-search/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 /**
  * A class that checks if a given word can be formed by a sequence of adjacent characters
  * in a two-dimensional char array.
