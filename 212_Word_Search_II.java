@@ -1,7 +1,13 @@
-// id: 212
-// Name: Word Search II
-// link: https://leetcode.com/problems/word-search-ii/
-// Difficulty: Hard
+/*
+ * 212. Word Search II
+ * Problem Link: https://leetcode.com/problems/word-search-ii/
+ * Difficulty:   Hard
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public List<String> findWords(char[][] board, String[] words) {
