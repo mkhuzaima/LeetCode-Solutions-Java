@@ -1,7 +1,13 @@
-// id: 211
-// Name: Design Add and Search Words Data Structure
-// link: https://leetcode.com/problems/design-add-and-search-words-data-structure/
-// Difficulty: Medium
+/*
+ * 211. Design Add and Search Words Data Structure
+ * Problem Link: https://leetcode.com/problems/design-add-and-search-words-data-structure/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class WordDictionary {
 
