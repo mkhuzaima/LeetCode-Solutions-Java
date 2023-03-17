@@ -5,71 +5,70 @@
 
 class Solution {
     public List<String> findWords(char[][] board, String[] words) {
-
-        TreeNode trie = new TreeNode();
-
-        // build trie
-        for (String word: words) {
-            trie.add(word);
+        // Initialize trie data structure
+        TrieNode root = new TrieNode();
+        for (String word : words) {
+            root.add(word);
         }
 
-        int rows = board.length;
-        int cols = board[0].length;
-        boolean [][] visited = new boolean[rows][cols];;
-
+        // Initialize variables
+        int numRows = board.length;
+        int numCols = board[0].length;
+        boolean[][] visited = new boolean[numRows][numCols];
         List<String> result = new ArrayList<>();
 
-
-        // perform dfs from each cell
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                dfs("", result, board, i, j, trie, visited);
+        // Perform depth first search (DFS) from each cell
+        for (int row = 0; row < numRows; row++) {
+            for (int col = 0; col < numCols; col++) {
+                dfs("", result, board, row, col, root, visited);
             }
         }
-
         return result;
     }
 
-    private void dfs(String prefix, List<String> result, char[][] board, int i, int j, TreeNode node, boolean[][] visited) {
-        if (i < 0 || i >= board.length) return ;
-        if (j < 0 || j >= board[i].length) return ;
-        if (visited[i][j]) return ;
+    private void dfs(String prefix, List<String> result, char[][] board, int row, int col, TrieNode node, boolean[][] visited) {
+        // Check if current cell is out of bounds or has already been visited
+        if (row < 0 || row >= board.length || col < 0 || col >= board[0].length || visited[row][col]) {
+            return;
+        }
 
-        node = node.get(board[i][j]);
-        if (node == null) return ;
+        // Check if the current letter exists in the trie
+        node = node.get(board[row][col]);
+        if (node == null) {
+            return;
+        }
 
-        visited[i][j] = true;
-        prefix += board[i][j];
-        
+        // Mark cell as visited and add current letter to prefix
+        visited[row][col] = true;
+        prefix += board[row][col];
+
+        // If the prefix matches a word in the trie, add it to the result
         if (node.isWord()) {
             result.add(prefix);
-            
-            // to avoid duplicate words in result, mark it as not word
+
+            // To avoid duplicate words in result, mark it as not word
             node.resetWord();
         }
-        
-        // recursive call to neighbours
-        dfs(prefix, result, board, i-1, j, node, visited);
-        dfs(prefix, result, board, i+1, j, node, visited);
-        dfs(prefix, result, board, i, j-1, node, visited);
-        dfs(prefix, result, board, i, j+1, node, visited);
-        
-        // remove as visited
-        visited[i][j] = false;
+
+        // Recursive calls to neighboring cells
+        dfs(prefix, result, board, row - 1, col, node, visited);
+        dfs(prefix, result, board, row + 1, col, node, visited);
+        dfs(prefix, result, board, row, col - 1, node, visited);
+        dfs(prefix, result, board, row, col + 1, node, visited);
+
+        // Mark cell as unvisited
+        visited[row][col] = false;
     }
 
-
-
-
-    private class TreeNode {
-        private static int BRANCHING_FACTOR = 26; // number of letters
+    private class TrieNode {
+      private static int BRANCHING_FACTOR = 26; // number of letters
 
         // 26-array tree
-        TreeNode[] children;
+        TrieNode[] children;
         private boolean isWord;
 
-        public TreeNode() {
-            children = new TreeNode[BRANCHING_FACTOR];
+        public TrieNode() {
+            children = new TrieNode[BRANCHING_FACTOR];
             isWord = false;
         }
 
@@ -81,20 +80,20 @@ class Solution {
             isWord = false;
         }
 
-        public TreeNode get(char c) {
-            return children[c -'a'];
+        public TrieNode get(char c) {
+            return children[c - 'a'];
         }
 
-        public TreeNode putIfAbsent(char c) {
+        public TrieNode putIfAbsent(char c) {
             c -= 'a';   // convert letter from 0 to 25
             if (children[c] == null) {
-                children[c] = new TreeNode();
+                children[c] = new TrieNode();
             }
             return children[c];
         }
 
         public void add(String word) {
-            TreeNode temp = this;
+            TrieNode temp = this;
             for (int i = 0; i < word.length(); i++) {
                 temp = temp.putIfAbsent(word.charAt(i));
             }
