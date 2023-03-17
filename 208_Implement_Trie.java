@@ -1,7 +1,13 @@
-// id: 208
-// Name: Implement Trie (Prefix Tree)
-// link: https://leetcode.com/problems/implement-trie-prefix-tree/
-// Difficulty: Medium
+/*
+ * 208. Implement Trie (Prefix Tree)
+ * Problem Link: https://leetcode.com/problems/implement-trie-prefix-tree/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Trie {
     TreeNode root;
