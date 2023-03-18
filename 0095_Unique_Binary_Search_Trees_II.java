@@ -1,7 +1,13 @@
-// id: 95
-// Name: Unique Binary Search Trees II
-// link: https://leetcode.com/problems/unique-binary-search-trees-ii/
-// Difficulty: Medium
+/*
+ * 95. Unique Binary Search Trees II
+ * Problem Link: https://leetcode.com/problems/unique-binary-search-trees-ii/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public List<TreeNode> generateTrees(int n) {
