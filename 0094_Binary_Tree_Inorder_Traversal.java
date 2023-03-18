@@ -1,7 +1,13 @@
-// id: 94
-// Name: Binary Tree Inorder Traversal
-// link: https://leetcode.com/problems/binary-tree-inorder-traversal/
-// Difficulty: Easy
+/*
+ * 94. Binary Tree Inorder Traversal
+ * Problem Link: https://leetcode.com/problems/binary-tree-inorder-traversal/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
