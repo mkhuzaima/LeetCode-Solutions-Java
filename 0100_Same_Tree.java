@@ -1,7 +1,13 @@
-// id: 100
-// Name: Same Tree
-// link: https://leetcode.com/problems/same-tree/
-// Difficulty: Easy
+/*
+ * 100. Same Tree
+ * Problem Link: https://leetcode.com/problems/same-tree/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
