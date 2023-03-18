@@ -9,58 +9,49 @@
  * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
  */
 
+// can also be implemented using 2 stacks
+class DoublyLinkedListNode {
+    String url;           // the URL associated with this node
+    DoublyLinkedListNode next;   // reference to the next node
+    DoublyLinkedListNode prev;   // reference to the previous node
+
+    public DoublyLinkedListNode(String url, DoublyLinkedListNode prev) {
+        this.url = url;
+        this.prev = prev;
+        next = null;
+    }
+}
+
 class BrowserHistory {
-    
-    // Stack to store the URLs visited after the current page
-    Stack<String> forwardHistory;
-    
-    // Stack to store the URLs visited before the current page
-    Stack<String> backwardHistory;
-    
-    // The current page URL
-    String currentPage;
+    // left side of current is backward History
+    // right side of current is forward History
+    DoublyLinkedListNode current;
 
-    // Constructor to initialize the browser with a homepage
     public BrowserHistory(String homepage) {
-        forwardHistory = new Stack<>();
-        backwardHistory = new Stack<>();
-        currentPage = homepage;
+        current = new DoublyLinkedListNode(homepage, null);
     }
     
-    // Method to visit a new page
+    // Add a new node with the given URL to the end of the linked list
     public void visit(String url) {
-        
-        // Clear the forward history since we are starting a new chain of visited URLs
-        forwardHistory.clear();
-
-        // Add the current page to the backward history and set the current page to the new URL
-        backwardHistory.push(currentPage);
-        currentPage = url;
+        current.next = new DoublyLinkedListNode(url, current);
+        current = current.next;
     }
     
-    // Method to move backward by a certain number of steps
+    // Move the current node back by the given number of steps, and return the URL of the new current node
     public String back(int steps) {
-        // Move back by popping URLs from the backward history and pushing them onto the forward history
-        while (steps > 0 && !backwardHistory.isEmpty()) {
-            forwardHistory.push(currentPage);
-            currentPage = backwardHistory.pop();
+        while (steps > 0 && current.prev != null) {
+            current = current.prev;
             steps--;
         }
-        
-        // Return the current page after moving back
-        return currentPage;
+        return current.url;
     }
     
-    // Method to move forward by a certain number of steps
+    // Move the current node forward by the given number of steps, and return the URL of the new current node
     public String forward(int steps) {
-        // Move forward by popping URLs from the forward history and pushing them onto the backward history
-        while (steps > 0 && !forwardHistory.isEmpty()) {
-            backwardHistory.push(currentPage);
-            currentPage = forwardHistory.pop();
+        while (steps > 0 && current.next != null) {
+            current = current.next;
             steps--;
         }
-        
-        // Return the current page after moving forward
-        return currentPage;
+        return current.url;
     }
 }
