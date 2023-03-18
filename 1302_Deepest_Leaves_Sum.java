@@ -1,7 +1,13 @@
-// id: 1302
-// Name: Deepest Leaves Sum
-// link: https://leetcode.com/problems/deepest-leaves-sum/
-// Difficulty: Medium
+/*
+ * 1302. Deepest Leaves Sum
+ * Problem Link: https://leetcode.com/problems/deepest-leaves-sum/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int deepestLeavesSum(TreeNode root) {
