@@ -1,7 +1,13 @@
-// id: 1372
-// Name: Longest ZigZag Path in a Binary Tree
-// link: https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/
-// Difficulty: Medium
+/*
+ * 1372. Longest ZigZag Path in a Binary Tree
+ * Problem Link: https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     int maxLength = 0;
