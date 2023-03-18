@@ -1,7 +1,13 @@
-// id: 101
-// Name: Symmetric Tree
-// link: https://leetcode.com/problems/symmetric-tree/
-// Difficulty: Easy
+/*
+ * 101. Symmetric Tree
+ * Problem Link: https://leetcode.com/problems/symmetric-tree/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public boolean isSymmetric(TreeNode root) {
