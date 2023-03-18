@@ -1,7 +1,13 @@
-// id: 1305
-// Name: All Elements in Two Binary Search Trees
-// link: https://leetcode.com/problems/all-elements-in-two-binary-search-trees/
-// Difficulty: Medium
+/*
+ * 1305. All Elements in Two Binary Search Trees
+ * Problem Link: https://leetcode.com/problems/all-elements-in-two-binary-search-trees/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
