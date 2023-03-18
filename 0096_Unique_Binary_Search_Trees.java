@@ -1,7 +1,13 @@
-// id: 96
-// Name: Unique Binary Search Trees
-// link: https://leetcode.com/problems/unique-binary-search-trees/
-// Difficulty: Medium
+/*
+ * 96. Unique Binary Search Trees
+ * Problem Link: https://leetcode.com/problems/unique-binary-search-trees/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int numTrees(int n) {
