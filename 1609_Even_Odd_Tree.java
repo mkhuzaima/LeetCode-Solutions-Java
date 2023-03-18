@@ -1,7 +1,13 @@
-// id: 1609
-// Name: Even Odd Tree
-// link: https://leetcode.com/problems/even-odd-tree/
-// Difficulty: Medium
+/*
+ * 1609. Even Odd Tree
+ * Problem Link: https://leetcode.com/problems/even-odd-tree/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public boolean isEvenOddTree(TreeNode root) {
