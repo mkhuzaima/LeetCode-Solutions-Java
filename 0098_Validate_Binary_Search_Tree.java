@@ -1,7 +1,13 @@
-// id: 98
-// Name: Validate Binary Search Tree
-// link: https://leetcode.com/problems/validate-binary-search-tree/
-// Difficulty: Medium
+/*
+ * 98. Validate Binary Search Tree
+ * Problem Link: https://leetcode.com/problems/validate-binary-search-tree/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public boolean isValidBST(TreeNode root) {
