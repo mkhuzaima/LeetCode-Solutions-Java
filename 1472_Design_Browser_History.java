@@ -1,7 +1,13 @@
-// id: 1472
-// Name: Design Browser History
-// link: https://leetcode.com/problems/design-browser-history/
-// Difficulty: Medium
+/*
+ * 1472. Design Browser History
+ * Problem Link: https://leetcode.com/problems/design-browser-history/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class BrowserHistory {
     
