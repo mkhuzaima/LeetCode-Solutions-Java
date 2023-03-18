@@ -1,7 +1,13 @@
-// id: 1382
-// Name: Balance a Binary Search Tree
-// link: https://leetcode.com/problems/balance-a-binary-search-tree/
-// Difficulty: Medium
+/*
+ * 1382. Balance a Binary Search Tree
+ * Problem Link: https://leetcode.com/problems/balance-a-binary-search-tree/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public TreeNode balanceBST(TreeNode root) {
