@@ -1,7 +1,13 @@
-// id: 37
-// Name: Sudoku Solver
-// link: https://leetcode.com/problems/sudoku-solver/
-// Difficulty: Hard
+/*
+ * 37. Sudoku Solver
+ * Problem Link: https://leetcode.com/problems/sudoku-solver/
+ * Difficulty:   Hard
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     // Keep track of whether the sudoku puzzle is completed
