@@ -1,7 +1,13 @@
-// id: 9
-// Name: Palindrome Number
-// link: https://leetcode.com/problems/palindrome-number/
-// Difficulty: Easy
+/*
+ * 9. Palindrome Number
+ * Problem Link: https://leetcode.com/problems/palindrome-number/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public boolean isPalindrome(int x) {
