@@ -1,7 +1,13 @@
-// id: 142
-// Name: Linked List Cycle II
-// link: https://leetcode.com/problems/linked-list-cycle-ii/
-// Difficulty: Medium
+/*
+ * 142. Linked List Cycle II
+ * Problem Link: https://leetcode.com/problems/linked-list-cycle-ii/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 public class Solution {
     public ListNode detectCycle(ListNode head) {
