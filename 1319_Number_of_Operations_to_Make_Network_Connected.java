@@ -1,7 +1,13 @@
-// id: 1319
-// Name: Number of Operations to Make Network Connected
-// link: https://leetcode.com/problems/number-of-operations-to-make-network-connected/
-// Difficulty: Medium
+/*
+ * 1319. Number of Operations to Make Network Connected
+ * Problem Link: https://leetcode.com/problems/number-of-operations-to-make-network-connected/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class UnionFind {
     int [] par;
