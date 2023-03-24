@@ -1,7 +1,13 @@
-// id: 2348
-// Name:  Number of Zero-Filled Subarrays
-// link: https://leetcode.com/problems/number-of-zero-filled-subarrays/
-// Difficulty: Medium
+/*
+ * 2348.  Number of Zero-Filled Subarrays
+ * Problem Link: https://leetcode.com/problems/number-of-zero-filled-subarrays/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public long zeroFilledSubarray(int[] nums) {
