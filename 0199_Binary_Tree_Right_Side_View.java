@@ -1,7 +1,13 @@
-// id: 199
-// Name: Binary Tree Right Side View
-// link: https://leetcode.com/problems/binary-tree-right-side-view/
-// Difficulty: Medium
+/*
+ * 199. Binary Tree Right Side View
+ * Problem Link: https://leetcode.com/problems/binary-tree-right-side-view/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {

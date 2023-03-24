@@ -1,7 +1,13 @@
-// id: 1466
-// Name: Reorder Routes to Make All Paths Lead to the City Zero
-// link: https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/
-// Difficulty: Medium
+/*
+ * 1466. Reorder Routes to Make All Paths Lead to the City Zero
+ * Problem Link: https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     Map<Integer, List<int []>> map;
