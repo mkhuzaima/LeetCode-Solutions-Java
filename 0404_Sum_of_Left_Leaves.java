@@ -1,7 +1,13 @@
-// id: 404
-// Name: Sum of Left Leaves
-// link: https://leetcode.com/problems/sum-of-left-leaves/
-// Difficulty: Easy
+/*
+ * 404. Sum of Left Leaves
+ * Problem Link: https://leetcode.com/problems/sum-of-left-leaves/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     int sum = 0;
