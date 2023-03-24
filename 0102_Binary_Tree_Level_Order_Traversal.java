@@ -1,7 +1,13 @@
-// id: 102
-// Name: Binary Tree Level Order Traversal
-// link: https://leetcode.com/problems/binary-tree-level-order-traversal/
-// Difficulty: Medium
+/*
+ * 102. Binary Tree Level Order Traversal
+ * Problem Link: https://leetcode.com/problems/binary-tree-level-order-traversal/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
