@@ -1,7 +1,13 @@
-// id: 200
-// Name: Number of Islands
-// link: https://leetcode.com/problems/number-of-islands/
-// Difficulty: Medium
+/*
+ * 200. Number of Islands
+ * Problem Link: https://leetcode.com/problems/number-of-islands/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class UnionFind {
     private int [] par;
