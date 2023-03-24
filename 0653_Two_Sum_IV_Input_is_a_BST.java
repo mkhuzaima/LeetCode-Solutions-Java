@@ -1,7 +1,13 @@
-// id: 653
-// Name: Two Sum IV - Input is a BST
-// link: https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
-// Difficulty: Easy
+/*
+ * 653. Two Sum IV - Input is a BST
+ * Problem Link: https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     Set<Integer> set = new HashSet<>();
