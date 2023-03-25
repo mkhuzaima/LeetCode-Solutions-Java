@@ -1,7 +1,13 @@
-// id: 617
-// Name: Merge Two Binary Trees
-// link: https://leetcode.com/problems/merge-two-binary-trees/
-// Difficulty: Easy
+/*
+ * 617. Merge Two Binary Trees
+ * Problem Link: https://leetcode.com/problems/merge-two-binary-trees/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
