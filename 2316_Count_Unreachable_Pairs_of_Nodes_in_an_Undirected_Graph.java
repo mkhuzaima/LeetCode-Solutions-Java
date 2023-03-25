@@ -1,7 +1,13 @@
-// id: 2316
-// Name: Count Unreachable Pairs of Nodes in an Undirected Graph
-// link: https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/
-// Difficulty: Medium
+/*
+ * 2316. Count Unreachable Pairs of Nodes in an Undirected Graph
+ * Problem Link: https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     boolean [] visited;
