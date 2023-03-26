@@ -1,7 +1,13 @@
-// id: 2360
-// Name: Longest Cycle in a Graph
-// link: https://leetcode.com/problems/longest-cycle-in-a-graph/
-// Difficulty: Hard
+/*
+ * 2360. Longest Cycle in a Graph
+ * Problem Link: https://leetcode.com/problems/longest-cycle-in-a-graph/
+ * Difficulty:   Hard
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     int answer = -1;
