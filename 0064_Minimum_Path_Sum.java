@@ -1,7 +1,13 @@
-// id: 64
-// Name: Minimum Path Sum
-// link: https://leetcode.com/problems/minimum-path-sum/
-// Difficulty: Medium
+/*
+ * 64. Minimum Path Sum
+ * Problem Link: https://leetcode.com/problems/minimum-path-sum/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
   public int minPathSum(int[][] grid) {
