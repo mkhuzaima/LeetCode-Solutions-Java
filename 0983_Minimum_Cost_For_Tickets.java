@@ -1,7 +1,13 @@
-// id: 983
-// Name: Minimum Cost For Tickets
-// link: https://leetcode.com/problems/minimum-cost-for-tickets/
-// Difficulty: Medium
+/*
+ * 983. Minimum Cost For Tickets
+ * Problem Link: https://leetcode.com/problems/minimum-cost-for-tickets/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int mincostTickets(int[] days, int[] costs) {
