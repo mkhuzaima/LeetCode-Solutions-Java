@@ -1,7 +1,13 @@
-// id: 2405
-// Name: Optimal Partition of String
-// link: https://leetcode.com/problems/optimal-partition-of-string/description/
-// Difficulty: Medium
+/*
+ * 2405. Optimal Partition of String
+ * Problem Link: https://leetcode.com/problems/optimal-partition-of-string/description/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int partitionString(String s) {
