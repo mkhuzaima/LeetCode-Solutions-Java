@@ -1,7 +1,13 @@
-// id: 1768
-// Name: Merge Strings Alternately
-// link: https://leetcode.com/problems/merge-strings-alternately/description/
-// Difficulty: Easy
+/*
+ * 1768. Merge Strings Alternately
+ * Problem Link: https://leetcode.com/problems/merge-strings-alternately/description/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public String mergeAlternately(String word1, String word2) {
