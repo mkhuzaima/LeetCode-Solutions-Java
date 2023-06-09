@@ -1,7 +1,13 @@
-// id: 744
-// Name: Find Smallest Letter Greater Than Target
-// link: https://leetcode.com/problems/find-smallest-letter-greater-than-target/
-// Difficulty: Easy
+/*
+ * 744. Find Smallest Letter Greater Than Target
+ * Problem Link: https://leetcode.com/problems/find-smallest-letter-greater-than-target/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public char nextGreatestLetter(char[] letters, char target) {
