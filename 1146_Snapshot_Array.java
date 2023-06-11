@@ -1,7 +1,13 @@
-// id: 1146
-// Name: Snapshot Array
-// link: https://leetcode.com/problems/snapshot-array/
-// Difficulty: Medium
+/*
+ * 1146. Snapshot Array
+ * Problem Link: https://leetcode.com/problems/snapshot-array/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class SnapshotArray {
 
