@@ -1,7 +1,13 @@
-// id: 2326
-// Name: Spiral Matrix IV
-// link: https://leetcode.com/problems/spiral-matrix-iv/
-// Difficulty: Medium
+/*
+ * 2326. Spiral Matrix IV
+ * Problem Link: https://leetcode.com/problems/spiral-matrix-iv/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 /**
  * Definition for singly-linked list.
