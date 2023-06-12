@@ -1,7 +1,13 @@
-// id: 228
-// Name: Summary Ranges
-// link: https://leetcode.com/problems/summary-ranges/
-// Difficulty: Easy
+/*
+ * 228. Summary Ranges
+ * Problem Link: https://leetcode.com/problems/summary-ranges/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public List<String> summaryRanges(int[] nums) {
