@@ -1,7 +1,13 @@
-// id: 2352
-// Name: Equal Row and Column Pairs
-// link: https://leetcode.com/problems/equal-row-and-column-pairs/
-// Difficulty: Medium
+/*
+ * 2352. Equal Row and Column Pairs
+ * Problem Link: https://leetcode.com/problems/equal-row-and-column-pairs/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     // brute force approach
