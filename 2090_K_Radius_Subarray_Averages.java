@@ -1,7 +1,13 @@
-// id: 2090
-// Name: K Radius Subarray Averages
-// link: https://leetcode.com/problems/k-radius-subarray-averages/
-// Difficulty: Medium
+/*
+ * 2090. K Radius Subarray Averages
+ * Problem Link: https://leetcode.com/problems/k-radius-subarray-averages/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int[] getAverages(int[] nums, int k) {
