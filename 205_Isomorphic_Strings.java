@@ -1,7 +1,13 @@
-// id: 205
-// Name: Isomorphic Strings
-// link: https://leetcode.com/problems/isomorphic-strings/description/
-// Difficulty: Easy
+/*
+ * 205. Isomorphic Strings
+ * Problem Link: https://leetcode.com/problems/isomorphic-strings/description/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public boolean isIsomorphic(String s, String t) {
