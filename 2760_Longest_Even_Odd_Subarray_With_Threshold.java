@@ -1,7 +1,13 @@
-// id: 2760
-// Name: Longest Even Odd Subarray With Threshold
-// link: https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/
-// Difficulty: Easy
+/*
+ * 2760. Longest Even Odd Subarray With Threshold
+ * Problem Link: https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int longestAlternatingSubarray(int[] nums, int threshold) {
