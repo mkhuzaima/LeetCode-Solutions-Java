@@ -1,7 +1,13 @@
-// id: 8
-// Name: String to Integer (atoi)
-// link: https://leetcode.com/problems/string-to-integer-atoi/
-// Difficulty: Medium
+/*
+ * 8. String to Integer (atoi)
+ * Problem Link: https://leetcode.com/problems/string-to-integer-atoi/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int myAtoi(String s) {
