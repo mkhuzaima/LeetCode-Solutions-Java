@@ -1,7 +1,13 @@
-// id: 1457
-// Name: Pseudo-Palindromic Paths in a Binary Tree
-// link: https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/
-// Difficulty: Medium
+/*
+ * 1457. Pseudo-Palindromic Paths in a Binary Tree
+ * Problem Link: https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 /**
  * Definition for a binary tree node.
