@@ -30,9 +30,8 @@ class Solution {
         }
 
 
-        // for cases like ()(()
+        // for cases like (()
         // also count from backwards
-
         left = right = 0;
         for (int i = s.length()-1; i >= 0; i--) {
             System.out.println("left="+left+", right = " +right);
