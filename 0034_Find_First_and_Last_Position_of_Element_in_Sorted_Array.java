@@ -1,7 +1,13 @@
-// id: 34
-// Name: Find First and Last Position of Element in Sorted Array
-// link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
-// Difficulty: Medium
+/*
+ * 34. Find First and Last Position of Element in Sorted Array
+ * Problem Link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int[] searchRange(int[] nums, int target) {
