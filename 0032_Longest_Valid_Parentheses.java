@@ -1,7 +1,13 @@
-// id: 32
-// Name: Longest Valid Parentheses
-// link: https://leetcode.com/problems/longest-valid-parentheses/
-// Difficulty: Hard
+/*
+ * 32. Longest Valid Parentheses
+ * Problem Link: https://leetcode.com/problems/longest-valid-parentheses/
+ * Difficulty:   Hard
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int longestValidParentheses(String s) {
