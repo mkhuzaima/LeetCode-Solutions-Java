@@ -1,7 +1,13 @@
-// id: 2220
-// Name: Minimum Bit Flips to Convert Number
-// link: https://leetcode.com/problems/minimum-bit-flips-to-convert-number/
-// Difficulty: Easy
+/*
+ * 2220. Minimum Bit Flips to Convert Number
+ * Problem Link: https://leetcode.com/problems/minimum-bit-flips-to-convert-number/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int minBitFlips(int start, int goal) {
