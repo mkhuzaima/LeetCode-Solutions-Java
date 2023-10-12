@@ -1,7 +1,13 @@
-// id: 1095
-// Name: Find in Mountain Array
-// link: https://leetcode.com/problems/find-in-mountain-array/
-// Difficulty: Hard
+/*
+ * 1095. Find in Mountain Array
+ * Problem Link: https://leetcode.com/problems/find-in-mountain-array/
+ * Difficulty:   Hard
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 /**
  * // This is MountainArray's API interface.
