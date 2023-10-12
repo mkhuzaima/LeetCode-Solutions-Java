@@ -1,7 +1,13 @@
-// id: 852
-// Name: Peak Index in a Mountain Array
-// link: https://leetcode.com/problems/peak-index-in-a-mountain-array/
-// Difficulty: Medium
+/*
+ * 852. Peak Index in a Mountain Array
+ * Problem Link: https://leetcode.com/problems/peak-index-in-a-mountain-array/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int peakIndexInMountainArray(int[] arr) {
