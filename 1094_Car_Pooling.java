@@ -1,7 +1,13 @@
-// id: 1094
-// Name: Car Pooling
-// link: https://leetcode.com/problems/car-pooling/
-// Difficulty: Medium
+/*
+ * 1094. Car Pooling
+ * Problem Link: https://leetcode.com/problems/car-pooling/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public boolean carPooling(int[][] trips, int capacity) {
