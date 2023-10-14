@@ -1,7 +1,13 @@
-// id: 746
-// Name: Min Cost Climbing Stairs
-// link: https://leetcode.com/problems/min-cost-climbing-stairs/?envType=daily-question
-// Difficulty: Easy
+/*
+ * 746. Min Cost Climbing Stairs
+ * Problem Link: https://leetcode.com/problems/min-cost-climbing-stairs/?envType=daily-question
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int minCostClimbingStairs(int[] cost) {
