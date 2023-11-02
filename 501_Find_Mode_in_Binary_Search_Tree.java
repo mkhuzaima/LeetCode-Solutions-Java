@@ -1,7 +1,13 @@
-// id: 501
-// Name: Find Mode in Binary Search Tree
-// link: https://leetcode.com/problems/find-mode-in-binary-search-tree/
-// Difficulty: Easy
+/*
+ * 501. Find Mode in Binary Search Tree
+ * Problem Link: https://leetcode.com/problems/find-mode-in-binary-search-tree/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 /**
  * Definition for a binary tree node.
