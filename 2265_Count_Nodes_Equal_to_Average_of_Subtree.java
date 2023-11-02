@@ -1,7 +1,13 @@
-// id: 2265
-// Name: Count Nodes Equal to Average of Subtree
-// link: https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/
-// Difficulty: Medium
+/*
+ * 2265. Count Nodes Equal to Average of Subtree
+ * Problem Link: https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 /**
  * Definition for a binary tree node.
