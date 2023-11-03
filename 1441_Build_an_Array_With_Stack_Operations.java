@@ -1,7 +1,13 @@
-// id: 1441
-// Name: Build an Array With Stack Operations
-// link: https://leetcode.com/problems/build-an-array-with-stack-operations/
-// Difficulty: Medium
+/*
+ * 1441. Build an Array With Stack Operations
+ * Problem Link: https://leetcode.com/problems/build-an-array-with-stack-operations/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public List<String> buildArray(int[] target, int n) {
