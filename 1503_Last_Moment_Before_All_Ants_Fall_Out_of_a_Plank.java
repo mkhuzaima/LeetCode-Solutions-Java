@@ -1,7 +1,13 @@
-// id: 1503
-// Name: Last Moment Before All Ants Fall Out of a Plank
-// link: https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/
-// Difficulty: Medium
+/*
+ * 1503. Last Moment Before All Ants Fall Out of a Plank
+ * Problem Link: https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int getLastMoment(int n, int[] left, int[] right) {
