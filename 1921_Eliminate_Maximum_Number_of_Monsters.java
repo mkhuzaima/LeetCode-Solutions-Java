@@ -1,7 +1,13 @@
-// id: 1921
-// Name: Eliminate Maximum Number of Monsters
-// link: https://leetcode.com/problems/eliminate-maximum-number-of-monsters/
-// Difficulty: Medium
+/*
+ * 1921. Eliminate Maximum Number of Monsters
+ * Problem Link: https://leetcode.com/problems/eliminate-maximum-number-of-monsters/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int eliminateMaximum(int[] dist, int[] speed) {
