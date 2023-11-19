@@ -1,7 +1,13 @@
-// id: 1887
-// Name: Reduction Operations to Make the Array Elements Equal
-// link: https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/
-// Difficulty: Medium
+/*
+ * 1887. Reduction Operations to Make the Array Elements Equal
+ * Problem Link: https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int reductionOperations(int[] nums) {
