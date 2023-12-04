@@ -1,7 +1,13 @@
-// id: 1361
-// Name: Validate Binary Tree Nodes
-// link: https://leetcode.com/problems/validate-binary-tree-nodes/
-// Difficulty: Medium
+/*
+ * 1361. Validate Binary Tree Nodes
+ * Problem Link: https://leetcode.com/problems/validate-binary-tree-nodes/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public boolean validateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild) {
