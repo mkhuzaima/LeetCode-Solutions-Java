@@ -1,7 +1,13 @@
-// id: 1160
-// Name: Find Words That Can Be Formed by Characters
-// link: https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/
-// Difficulty: Easy
+/*
+ * 1160. Find Words That Can Be Formed by Characters
+ * Problem Link: https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     int [] map = new int[26];
