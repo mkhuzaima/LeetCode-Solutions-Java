@@ -1,7 +1,13 @@
-// id: 1266
-// Name: Minimum Time Visiting All Points
-// link: https://leetcode.com/problems/minimum-time-visiting-all-points/
-// Difficulty: Easy
+/*
+ * 1266. Minimum Time Visiting All Points
+ * Problem Link: https://leetcode.com/problems/minimum-time-visiting-all-points/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int minTimeToVisitAllPoints(int[][] points) {
