@@ -1,7 +1,13 @@
-// id: 1287
-// Name: Element Appearing More Than 25% In Sorted Array
-// link: https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/
-// Difficulty: Easy
+/*
+ * 1287. Element Appearing More Than 25% In Sorted Array
+ * Problem Link: https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int findSpecialInteger(int[] arr) {
