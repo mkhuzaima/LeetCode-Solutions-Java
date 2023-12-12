@@ -1,7 +1,13 @@
-// id: 1464
-// Name: Maximum Product of Two Elements in an Array
-// link: https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/
-// Difficulty: Easy
+/*
+ * 1464. Maximum Product of Two Elements in an Array
+ * Problem Link: https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/
+ * Difficulty:   Easy
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int maxProduct(int[] nums) {
