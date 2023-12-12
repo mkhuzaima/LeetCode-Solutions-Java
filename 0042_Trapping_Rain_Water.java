@@ -1,7 +1,13 @@
-// id: 42
-// Name: Trapping Rain Water
-// link: https://leetcode.com/problems/trapping-rain-water/description/
-// Difficulty: Hard
+/*
+ * 42. Trapping Rain Water
+ * Problem Link: https://leetcode.com/problems/trapping-rain-water/description/
+ * Difficulty:   Hard
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int trap(int[] height) {
