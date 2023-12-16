@@ -1,5 +1,7 @@
 # LeetCode-Solutions
-This repository contains the solutions for LeetCode problems.
+
+[![Leetcode Stats](https://leetcard.jacoblin.cool/mkhuzaima)](https://leetcode.com/mkhuzaima)
+
 
 ## Header Template
 ```java
