@@ -1,7 +1,5 @@
 # LeetCode-Solutions
-
-[![Leetcode Stats](https://leetcard.jacoblin.cool/mkhuzaima)](https://leetcode.com/mkhuzaima)
-
+<p align="center"><a href="https://leetcode.com/mkhuzaima"><img src="https://leetcard.jacoblin.cool/mkhuzaima" alt="Leetcode stats"></a> </p>
 
 ## Header Template
 ```java
