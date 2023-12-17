@@ -1,7 +1,13 @@
-// id: 2353
-// Name: Design a Food Rating System
-// link: https://leetcode.com/problems/design-a-food-rating-system/
-// Difficulty: Medium
+/*
+ * 2353. Design a Food Rating System
+ * Problem Link: https://leetcode.com/problems/design-a-food-rating-system/
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class FoodRatings {
 
