@@ -1,7 +1,13 @@
-// id: 2957
-// Name: Remove Adjacent Almost-Equal Characters
-// link: https://leetcode.com/problems/remove-adjacent-almost-equal-characters
-// Difficulty: Medium
+/*
+ * 2957. Remove Adjacent Almost-Equal Characters
+ * Problem Link: https://leetcode.com/problems/remove-adjacent-almost-equal-characters
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int removeAlmostEqualCharacters(String word) {
