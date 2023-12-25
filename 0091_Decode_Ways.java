@@ -1,7 +1,13 @@
-// id: 91
-// Name: Decode Ways
-// link: https://leetcode.com/problems/decode-ways
-// Difficulty: Medium
+/*
+ * 91. Decode Ways
+ * Problem Link: https://leetcode.com/problems/decode-ways
+ * Difficulty:   Medium
+ * 
+ * Solution Created by: Muhammad Khuzaima Umair
+ * LeetCode : https://leetcode.com/mkhuzaima/
+ * Github   : https://github.com/mkhuzaima
+ * LinkedIn : https://www.linkedin.com/in/mkhuzaima/
+ */
 
 class Solution {
     public int numDecodings(String s) {
